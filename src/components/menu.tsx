@@ -6,9 +6,11 @@ export default function Menu() {
   return (
     <main className='menu'>
       <h2>Our menu</h2>
-      {pizzaData.map((pizza) => (
-        <Pizza pizza={pizza} />
-      ))}
+      <ul className='pizzas'>
+        {pizzaData.map((pizza) => (
+          <Pizza pizza={pizza} key={pizza.photoName} />
+        ))}
+      </ul>
     </main>
   );
 }
