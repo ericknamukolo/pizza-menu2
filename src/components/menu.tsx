@@ -4,10 +4,11 @@ import Pizza from './pizza';
 
 export default function Menu() {
   return (
-    <div>
+    <main className='menu'>
+      <h2>Our menu</h2>
       {pizzaData.map((pizza) => (
         <Pizza pizza={pizza} />
       ))}
-    </div>
+    </main>
   );
 }
